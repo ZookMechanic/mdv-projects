@@ -9,6 +9,13 @@
 console.log("Welcome back to Ascension!");
 console.log("Time to break out of the first room and explore.");
 
+// Initial Variables
+var myTotalPoints = 4526;
+var requiredPoints = 750;
+var fullAmmo = false;
+var emptyAmmo = true;
+var zombies = 5;
+
 
 // Procedure Function
 var openTopDoor = function (requiredPoints, myTotalPoints) {
@@ -49,38 +56,25 @@ var createACrawler = function (zombies) {};
 		zombies--;
 	if (zombies === 1) {
 		console.log("Don\'t forget to make a crawler.");
-	};
+	}
 };
 
 
-// Array Index
-var randomWeaponBox = [
-	"Python",
-	"CZ75", 
-	"Spectre", 
-	"SPAZ-12", 
-	"HS10", 
-	"China Lake", 
-	"M72 LAW", 
-	"HK21", 
-	"RPK", 
-	"Thundergun", 
-	"Ballistic Knife", 
-	"Matryoshka Dolls", 
-	"Gersh Device", 
-	"G11", 
-	"Commando", 
-	"FAMAS", 
-	"Ray Gun", 
-	"Crossbow", 
-	"AUG", 
-	"Galil", 
-	"FN FAL"
-];
+// Number Function
+var useTheBox = function () {};
+	var weaponBoxPointReq = 950;
+	var yourPoints = 7000;
+	var minimumPoints = 2500;
+	if (yourPoints >= 7000 || minimumPoints < 2500) {
+		console.log("You have plenty of points to go and use the weapon box...Hopefully you get something good!");
+	} else { 
+		console.log("Crappy! You need to save some points and go another round to hit the box.");
+};
 
 
-// String Function
-
-
+// Array Function
+var weaponBox = ["HK21", "RPK", "Thundergun", "Gersh Device", "Commando", "Ray Gun", "AUG", "Galil"];
+var weapons = weaponBox[Math.floor(Math.random()*weaponBox.length)];
+console.log("You hit up the box and received the " + weapons);
 
 
