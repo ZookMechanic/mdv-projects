@@ -1,3 +1,4 @@
+
 // Kevin Flanagan
 // 5 June 2012
 // Deliverable 2
@@ -21,7 +22,7 @@ var openTopDoor = function (requiredPoints, myTotalPoints) {
 openTopDoor(750, 4526);
 
 
-//Boolean Function
+// Boolean Function
 var getAmmo = function (fullAmmo, emptyAmmo) {
 	var fullAmmo = false,
 		emptyAmmo = true;
@@ -36,24 +37,20 @@ var getAmmo = function (fullAmmo, emptyAmmo) {
 getAmmo(false, true);
 
 
-// Number Function
-var getStuffDone = function (crawler, zombies) {
-	var crawler = 2,
-		zombies = 0;
-	if (crawler >= 1) {
-		console.log("Good...you have " + crawler + " crawlers.  Don\'t let them hit you!");
-		if (zombies === 0) {
-			console.log("No zombies...Get some stuff done before the crawler bleeds out.");
-		} else {
-			console.log("Take a grenade and make a crawler.");
-		}	
-	} else {
-		console.log("Use your knife or get some headshots to rack up points.");
-		return getStuffDone;
-	}
-};
+console.log("Go ahead and kill your crawlers, start Round 5 to get some more points.");
+console.log("We will only worry about the last 5 zombies in the rounds to get a crawler.");
 
-getStuffDone(2, 0);
+
+// Number Function
+var createACrawler = function (zombies) {};	
+	var zombies = 5;
+	while (zombies > 0) {
+		console.log(zombies + " zombies left in the round.");
+		zombies--;
+	if (zombies === 1) {
+		console.log("Don\'t forget to make a crawler.");
+	};
+};
 
 
 // Array Index
@@ -80,3 +77,10 @@ var randomWeaponBox = [
 	"Galil", 
 	"FN FAL"
 ];
+
+
+// String Function
+
+
+
+
