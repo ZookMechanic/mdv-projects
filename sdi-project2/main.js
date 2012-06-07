@@ -10,7 +10,7 @@ console.log("Time to break out of the first room and explore.");
 
 
 // Procedure Function
-var openDoor = function (requiredPoints, myTotalPoints) {
+var openTopDoor = function (requiredPoints, myTotalPoints) {
 	if (myTotalPoints - requiredPoints >= requiredPoints) {
 		console.log("You have " + myTotalPoints + " points.  This door is only " + requiredPoints + " points.  Go ahead and open the door!");
 	} else {
@@ -18,13 +18,21 @@ var openDoor = function (requiredPoints, myTotalPoints) {
 	}
 };
 
-openDoor(750, 4526);
+openTopDoor(750, 4526);
 
 
 //Boolean Function
+var getAmmo = function (fullAmmo, emptyAmmo) {
+	var fullAmmo = false
+		emptyAmmo = true
+	if (fullAmmo === false) {
+		console.log("You're low on ammo...better find some more!");
+	} else {
+		console.log("No need to find ammo...your full.");	
+	}
+};
 
-
-
+getAmmo(false, true);
 
 
 // Array Index
