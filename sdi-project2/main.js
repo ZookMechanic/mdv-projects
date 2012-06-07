@@ -23,16 +23,37 @@ openTopDoor(750, 4526);
 
 //Boolean Function
 var getAmmo = function (fullAmmo, emptyAmmo) {
-	var fullAmmo = false
-		emptyAmmo = true
+	var fullAmmo = false,
+		emptyAmmo = true;
 	if (fullAmmo === false) {
 		console.log("You're low on ammo...better find some more!");
 	} else {
 		console.log("No need to find ammo...your full.");	
+		return getAmmo;
 	}
 };
 
 getAmmo(false, true);
+
+
+// Number Function
+var getStuffDone = function (crawler, zombies) {
+	var crawler = 2,
+		zombies = 0;
+	if (crawler >= 1) {
+		console.log("Good...you have " + crawler + " crawlers.  Don\'t let them hit you!");
+		if (zombies === 0) {
+			console.log("No zombies...Get some stuff done before the crawler bleeds out.");
+		} else {
+			console.log("Take a grenade and make a crawler.");
+		}	
+	} else {
+		console.log("Use your knife or get some headshots to rack up points.");
+		return getStuffDone;
+	}
+};
+
+getStuffDone(2, 0);
 
 
 // Array Index
