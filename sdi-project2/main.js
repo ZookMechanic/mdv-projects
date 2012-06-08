@@ -82,6 +82,7 @@ var useTheBox = function () {};
 // Array Function
 var getNewWeapon = function () {
 	var weaponBox = ["HK21", "RPK", "Thundergun", "Gersh Device", "Commando", "Ray Gun", "AUG", "Galil"];
+	for (var i=0; i < 4; i++);
 	var weapons = weaponBox[Math.floor(Math.random()*weaponBox.length)];
 		console.log("You hit up the box and received the " + weapons + "!");
 };
