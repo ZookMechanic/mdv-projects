@@ -1,4 +1,4 @@
-// Kevin Flanagan
+ // Kevin Flanagan
 // 09 July 2012
 // Deliverable 2
 // More Time Spent At Work
@@ -7,10 +7,16 @@
 // Initial Variables
 
 
-// Initial Output
+// Procedure Function
+var isItClosingTime = function (currentTime) {
+	if (currentTime === 630) {
+		console.log("It is time to close this place down!");
+	} else {
+		console.log("Don\'t stare at the clock...it will only move slower!");
+	}
+};
 
-
-// Procedure
+isItClosingTime(630);
 
 
 // Boolean Function
