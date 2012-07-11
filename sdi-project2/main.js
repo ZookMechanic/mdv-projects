@@ -20,5 +20,15 @@ isItClosingTime(630);
 
 
 // Boolean Function
+var startClosing = function (anyCustomers, lockedFrontDoor) {
+	if (anyCustomers === false && lockedFrontDoor === true) {
+		console.log("Let\'s start bringing in the merchandise and motorcycles.");
+	} else {
+		console.log("We still have some customers browsing around the showroom.");
+	}
+};
+
+startClosing(false, true);
 
 
+// Number Function
