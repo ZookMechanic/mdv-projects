@@ -5,8 +5,19 @@
 
 
 // Initial Variables
-var availableSpaces = 2;
-
+var availableSpaces = 2,
+	firstString = "count the drawer",
+	secondString = "clock out",
+	motorcycles = [
+		"Kawasaki KLX250",
+		"Honda Fury",
+		"Yamaha RoadStar S",
+		"Yamaha V Star 1100",
+		"Yamaha V Star 250",
+		"Yamaha V Star Tourer",
+		"Yamaha Royal Star Venture",
+		"Kawasaki Vulcan 1700 Nomad",
+	];
 
 // Procedure Function
 var isItClosingTime = function (currentTime) {
@@ -33,18 +44,44 @@ startClosing(false, true);
 
 
 // Number Function
-var shedSpaces = function (availableSpaces) {
+var isThereShedSpace = function (availableSpaces) {
 	var availableSpaces = 2;
-	while (availableSpaces > 0) {
-		console.log("There is " + availableSpaces + " spaces left in the shed for a motorcycle.");
+	while (availableSpaces >= 0) {
+		console.log("There are " + availableSpaces + " spaces left in the shed for a motorcycle.");
 		availableSpaces--;
 	};
-		console.log("There are no more spaces left in the shed for bikes.");
+		console.log("The storage shed is full.");
 }; // End Number Function
 
-shedSpaces();
+isThereShedSpace();
+
 
 // String Function
+var lastFewTasks = function (firstString, secondString) {
+	var firstString = "count the drawer",
+		secondString = "clock out";
+	console.log("Make sure to " + firstString + " and " + secondString + " after pushing in the bikes.");
+};  // End String Function
+
+lastFewTasks();
 
 
-// Array Function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
