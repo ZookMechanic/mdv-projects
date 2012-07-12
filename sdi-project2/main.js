@@ -19,6 +19,7 @@ var availableSpaces = 2,
 		"Kawasaki Vulcan 1700 Nomad",
 	];
 
+
 // Procedure Function
 var isItClosingTime = function (currentTime) {
 	if (currentTime === 630) {
@@ -66,7 +67,25 @@ var lastFewTasks = function (firstString, secondString) {
 lastFewTasks();
 
 
+// Array Function
+var bikePushIn = function (motorcycles) {
+	var motorcycles = [
+		"Kawasaki KLX250",
+		"Honda Fury",
+		"Yamaha RoadStar S",
+		"Yamaha V Star 1100",
+		"Yamaha V Star 250",
+		"Yamaha V Star Tourer",
+		"Yamaha Royal Star Venture",
+		"Kawasaki Vulcan 1700 Nomad",
+	];
+	for (var i = 0; i < 7; i ++) {
+		console.log( "The " + motorcycles[i] + " is in the shop now." );
+	};
+		console.log("All the bikes are inside.  Let\'s get out of here and grab an adult beverage!");
+}; // End Array Function
 
+bikePushIn();
 
 
 
