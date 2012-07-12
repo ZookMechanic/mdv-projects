@@ -5,6 +5,7 @@
 
 
 // Initial Variables
+var availableSpaces = 2;
 
 
 // Procedure Function
@@ -14,7 +15,7 @@ var isItClosingTime = function (currentTime) {
 	} else {
 		console.log("Don\'t stare at the clock...it will only move slower!");
 	}
-};
+}; // End Procedure Function
 
 isItClosingTime(630);
 
@@ -26,9 +27,24 @@ var startClosing = function (anyCustomers, lockedFrontDoor) {
 	} else {
 		console.log("We still have some customers browsing around the showroom.");
 	}
-};
+}; // End Boolean Function
 
 startClosing(false, true);
 
 
 // Number Function
+var shedSpaces = function (availableSpaces) {
+	var availableSpaces = 2;
+	while (availableSpaces > 0) {
+		console.log("There is " + availableSpaces + " spaces left in the shed for a motorcycle.");
+		availableSpaces--;
+	};
+		console.log("There are no more spaces left in the shed for bikes.");
+}; // End Number Function
+
+shedSpaces();
+
+// String Function
+
+
+// Array Function
