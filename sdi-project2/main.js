@@ -38,6 +38,7 @@ var startClosing = function (anyCustomers, lockedFrontDoor) {
 		console.log("Let\'s start bringing in the merchandise and motorcycles.");
 	} else {
 		console.log("We still have some customers browsing around the showroom.");
+	return startClosing
 	}
 }; // End Boolean Function
 
@@ -52,6 +53,7 @@ var isThereShedSpace = function (availableSpaces) {
 		availableSpaces--;
 	};
 		console.log("The storage shed is full.");
+		return isThereShedSpace
 }; // End Number Function
 
 isThereShedSpace();
@@ -62,6 +64,7 @@ var lastFewTasks = function (firstString, secondString) {
 	var firstString = "count the drawer",
 		secondString = "clock out";
 	console.log("Make sure to " + firstString + " and " + secondString + " after pushing in the bikes.");
+	return lastFewTasks
 };  // End String Function
 
 lastFewTasks();
@@ -83,6 +86,7 @@ var bikePushIn = function (motorcycles) {
 		console.log( "The " + motorcycles[i] + " is in the shop now." );
 	};
 		console.log("All the bikes are inside.  Let\'s get out of here and grab an adult beverage!");
+		return bikePushIn
 }; // End Array Function
 
 bikePushIn();
