@@ -13,7 +13,7 @@ var employee = {
 
 
 // Global Variables
-
+var availableSpaces = 2
 
 // Method Procedure
 var store = {
@@ -41,6 +41,18 @@ var preparation = {
 }; // End Method Function
 
 
+// Method Mutator
+var shedSpace = {
+	isThereSpace: function () {
+		while (availableSpaces >= 0) {
+			console.log("There are " + availableSpaces + " spaces left in the shed for a motorcycle.");
+			availableSpaces--;
+		}
+			console.log("The storage shed is full.");
+	}
+}; // End Method Mutator
+
+
 // Method Accessor
 var pushIn = function () {
 	var motorcycles = [
@@ -66,5 +78,6 @@ var pushIn = function () {
 // Returned Values
 store.closeUp(630, 0);
 preparation.floorCleanup(true, true);
+shedSpace.isThereSpace();
 pushIn();
 
