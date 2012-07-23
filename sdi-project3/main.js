@@ -15,6 +15,7 @@ var employee = {
 // Global Variables
 var availableSpaces = 2
 
+
 // Method Procedure
 var store = {
 	closeUp: function (currentTime, currentCustomers) {
@@ -48,13 +49,14 @@ var shedSpace = {
 			console.log("There are " + availableSpaces + " spaces left in the shed for a motorcycle.");
 			availableSpaces--;
 		}
-			console.log("The storage shed is full.");
+			console.log("The storage shed is full of machines now.");
 	}
 }; // End Method Mutator
 
 
 // Method Accessor
-var pushIn = function () {
+var bikes = {
+	pushIn: function () {
 	var motorcycles = [
 		"Kawasaki KLX250",
 		"Honda Fury",
@@ -69,15 +71,24 @@ var pushIn = function () {
 		console.log("The " + motorcycles[i] + " is in the shop now.");
 	}
 		console.log("All the bikes are inside finally.  Let\'s get out of here and try to enjoy the rest of the day.");
+	}
 }; // End Method Accessor
 
 
+// String Object
+var register = function (firstString, secondString) {
+	var firstString = "make sure the drawer is good",
+		secondString = "clock out";
+	console.log("Don\'t forget to " + secondString + " and " + firstString + "."); 
+}; // End String Object
 
 
 
-// Returned Values
+
+
+// Output
 store.closeUp(630, 0);
 preparation.floorCleanup(true, true);
 shedSpace.isThereSpace();
-pushIn();
+bikes.pushIn();
 
