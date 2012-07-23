@@ -83,7 +83,12 @@ var register = function (firstString, secondString) {
 }; // End String Object
 
 
-
+// Object
+var myCar = {
+	make: "Mazda",
+	model: "3",
+	color: "grey"
+}; // End Object
 
 
 // Output
@@ -91,4 +96,5 @@ store.closeUp(630, 0);
 preparation.floorCleanup(true, true);
 shedSpace.isThereSpace();
 bikes.pushIn();
-
+register();
+console.log( "I\'ll get into my", myCar.make, "and drive home.");
