@@ -44,7 +44,7 @@ var preparation = {
 
 // Method Mutator
 var shedSpace = {
-	isThereSpace: function () {
+	isThereSpace: function (availableSpaces) {
 		while (availableSpaces >= 0) {
 			console.log("There are " + availableSpaces + " spaces left in the shed for a motorcycle.");
 			availableSpaces--;
@@ -94,7 +94,7 @@ var myCar = {
 // Output
 store.closeUp(630, 0);
 preparation.floorCleanup(true, true);
-shedSpace.isThereSpace();
+shedSpace.isThereSpace(2);
 bikes.pushIn();
 register();
 console.log( "I\'ll get into my", myCar.make, "and drive home.");
