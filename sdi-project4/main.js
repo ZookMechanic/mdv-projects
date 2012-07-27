@@ -14,15 +14,27 @@ var number = function(numberDecimal) {
 }; // End Number Decimal Function
 
 
+// Fuzzy-match a number: is the number above or below a number within a certain percent?
+
+// Fuzzy Number Function
+var fuzzNum = function(val1, val2) {
+	if (val1 < val2) {
+		var percent = ((val1 / val2) * 100);
+		console.log(val1 + " is " + percent + "% of " + val2);
+	} else {
+		if (val > val2) {
+			var percent = ((val1 / val2) * 100);
+			console.log(val1 + " is " + percent + "% greater than " + val2);
+		} else {
+			if (val1 === val2) {
+				console.log (val1 + "is equal to " + val2);
+			}
+		}
+	}
+}; // End Fuzzy Number Function
 
 
 // Find the number of hours or days difference between two dates.
-
-
-
-
-
-
 
 // Difference In Date Function
 var date = function(yyyy, mm, dd) {
@@ -39,4 +51,5 @@ var date = function(yyyy, mm, dd) {
 
 // Outputs
 number(2.1);
+fuzzNum(5, 10);
 date(2012, 12, 19);
