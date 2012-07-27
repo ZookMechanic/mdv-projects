@@ -6,11 +6,23 @@
 
 // Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10.
 
+// Number Decimal Function
+var number = function(numberDecimal) {
+	var decimal = numberDecimal; // Define number
+	decimal.toFixed(2); // Method of changing the number decimal
+	console.log(decimal.toFixed(2)); 
+}; // End Number Decimal Function
 
 
 
 
 // Find the number of hours or days difference between two dates.
+
+
+
+
+
+
 
 // Difference In Date Function
 var date = function(yyyy, mm, dd) {
@@ -26,5 +38,5 @@ var date = function(yyyy, mm, dd) {
 
 
 // Outputs
-
+number(2.1);
 date(2012, 12, 19);
