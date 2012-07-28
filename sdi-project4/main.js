@@ -47,9 +47,17 @@ var date = function(yyyy, mm, dd) {
 }; // End Difference In Date Function
 
 
+// Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+
+// String To Number Function
+var stringNum = function(string) {
+	parseInt(string); // Parsing the string to an integer
+	console.log("The string is converted to " + string); // Output of the string conversion
+}; // End String To Number Function
 
 
 // Outputs
 number(2.1);
 fuzzNum(5, 10);
 date(2012, 12, 19);
+stringNum(42);
