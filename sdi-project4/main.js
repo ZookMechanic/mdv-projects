@@ -21,6 +21,20 @@ var checkString = function(testNumber) {
 }; // End Phone Number Function
 
 
+// Does a string follow an aaa@bbb.ccc pattern like an email address?
+
+// Email Addy Function
+var checkEmailString = function(email) {
+	var inputString = email;
+	var pattern = /^(\w+)[@](\w+)[.](\w{3})$/; // Regular Expression pattern
+	if (pattern.test(inputString)) { // passing through the string to see if it is comparable
+		console.log(inputString + " is an email string."); // Output the result
+	} else {
+		console.log(inputString + " is not an email string.");
+	}
+}; // End Email Addy Function
+
+
 // *** Number ***
 
 // Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10.
@@ -77,6 +91,7 @@ var stringNum = function(string) {
 
 // Outputs
 checkString("316-686-5689");
+checkEmailString("bmxpert26@gmail.com");
 number(2.1);
 fuzzNum(5, 10);
 date(2012, 12, 19);
