@@ -1,8 +1,27 @@
 // Kevin Flanagan
-// 26 July 2012
+// 28 July 2012
 // Deliverable 4
-// My Library
+// Function Library 
 
+
+// *** String ***
+
+// Does a string follow a 123-456-7890 pattern like a phone number?
+
+// Phone Number Function
+var checkString = function(testNumber) {
+	var phoneNumber = testNumber;
+	var pattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; // Phone number reg expression pattern
+	if (pattern.test(phoneNumber)) { // Check the number against the pattern
+		var validPhoneNumber = phoneNumber.replace(pattern, "($1) $2-$3"); // Places the string in the phone number format
+		console.log(phoneNumber + " is a valid phone number.");	// Outputs the phone number to the console.
+	} else {
+		console.log(phoneNumber + " is not a valid phone Number.");
+	}	
+}; // End Phone Number Function
+
+
+// *** Number ***
 
 // Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10.
 
@@ -19,11 +38,11 @@ var number = function(numberDecimal) {
 // Fuzzy Number Function
 var fuzzNum = function(val1, val2) {
 	if (val1 < val2) {
-		var percent = ((val1 / val2) * 100);
+		var percent = ((val1 / val2) * 100); // Dividing the values to get percentage
 		console.log(val1 + " is " + percent + "% of " + val2);
 	} else {
 		if (val > val2) {
-			var percent = ((val1 / val2) * 100);
+			var percent = ((val1 / val2) * 100); // Dividing the values to get percentage
 			console.log(val1 + " is " + percent + "% greater than " + val2);
 		} else {
 			if (val1 === val2) {
@@ -51,12 +70,13 @@ var date = function(yyyy, mm, dd) {
 
 // String To Number Function
 var stringNum = function(string) {
-	parseInt(string); // Parsing the string to an integer
+	parseInt("string"); // Parsing the string to an integer
 	console.log("The string is converted to " + string); // Output of the string conversion
 }; // End String To Number Function
 
 
 // Outputs
+checkString("316-686-5689");
 number(2.1);
 fuzzNum(5, 10);
 date(2012, 12, 19);
