@@ -19,37 +19,74 @@
 	<!-- Document Body -->
 	<body>
 		
-		<!-- Heading Group -->
-		<header>
-			<h1>Biz Card Storage</h1>
-			<p>Add A Card</p>
-		</header>
+		<!-- Header -->
+		<h1>Biz Card Storage</h1>
 
-		<!-- App Navigation -->
-		<nav>
-			<ul>
-				<li>Category</li>
-			</ul>
-		</nav>
+		<!-- Form Start -->
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Add A Card</legend>
 
-		<!-- Selection Group -->
-		<select>
-			<optgroup label="Choose A Category">
-				<option>Dealership</option>
-				<option>Vendor</option>
-				<option>Personal</option>
-			</optgroup>
-		</select>
+					<!-- App Navigation -->
+					<nav>
+						<ul>
+							<li>Category</li>
+						</ul>
+					</nav>
 
-		<!-- Address Input -->
-		<nav>
-			<ul>
-				<li>Company Name:</li><input type="text" id="CompanyName"/>
-				<li>First Name:</li> <input type="text" id="FirstName"/>
-				<li>Last Name:</li> <input type="text" id="LastName"/>
-				<li>Address:</li> <input type="text" id="Address"/>
-				<li>City:</li> <input type="text" id="City"/>
-				<li>State:</li> <input type="text" id="State"/>
-			</ul>		
-		</nav>
+					<!-- Selection Group -->
+					<select>
+						<optgroup label="Choose A Category">
+							<option>Dealership</option>
+							<option>Vendor</option>
+							<option>Personal</option>
+							<option>Miscellaneous</option>
+						</optgroup>
+					</select>
+
+					<!-- Address and Contact Input -->
+					<nav>
+						<ul>
+							<li><label for="companyName">Company Name:</label> <input type="text" id="companyName"/></li>
+							<li><label for="firstName">First Name:</label> <input type="text" id="firstName"/></li>
+							<li><label for="lastName">Last Name:</label> <input type="text" id="lastName"/></li>
+							<li><label for="address">Address:</label> <input type="text" id="address"/></li>
+							<li><label for="city">City:</label> <input type="text" id="city"/></li>
+							<li><label for="state">State:</label> <input type="text" id="state"/></li>
+							<li><label for="email">Email:</label> <input type="email" id="email"/></li>
+						</ul>		
+					</nav>
+
+					<!-- Radio Button -->
+		
+
+					<!-- Save as Favorite -->
+					<nav>
+						<ul>
+							<li><input type="checkbox" name="color" value="Blue"/><p>Save as favorite?</p></li>
+
+					<!-- Date Added -->
+					<label for="dateadded">Date added:</label>
+					<input type="date" min="2012-01-01" max="2015-05-05" id="dateadded" name="dateadded" required aria-required="true" placeholder="2012-01-01">
+			
+					<!-- Notes -->
+					<li><label for="notes">Notes:</label><textarea id="notes"></textarea>
+						<input type="hidden" value="true"/>
+					</li>
+			</fieldset>
+		</form>
+
+		<!-- Submit Button -->
+		<input type="submit" value="Add Entry"/>
+
+			<!-- Footer -->
+			<footer>
+				<nav>
+					<a href="#">Clear Store Data</a>
+					<a href="#">Display Data</a>
+				</nav>
+			</footer>
+	</body>
+</html>
+
 
