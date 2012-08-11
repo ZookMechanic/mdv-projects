@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>	
+	
+	<!--HTML DOCUMENT HEADER -->
+	<head>
+		
+		<!-- Meta Tags -->
+		<meta charset="utf-8" />
+		<meta name="description" content="Add Item Page" />
+		<meta name="keywords" content="HTML5, Mobile Development, Full Sail University" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" comtent="user-scalable=no, width=device-width" />
+		<link href="CSS/styles.css" rel="stylesheet" />
+
+		<!-- Document Title -->
+		<title>Add Item Page</title>
+
+	</head>
+	
+	<!-- Document Body -->
+	<body>
+		
+		<!-- Header -->
+		<div id="site-wrapper">
+			<div id="content">
+				<header><h1 id="test">Biz Card Storage</h1></header>
+
+		<!-- Clear and Display Data -->
+		<nav>
+			<a href="#" id="clear">Clear Stored Data</a>
+			<a href="#" id="displaylink">Display Data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add New Item</a>
+		</nav>
+
+		<!-- Form Start -->
+		<form action="#" method="post" id="contactForm" />
+			<fieldset id="contactFieldset">
+				<legend>Add A Card</legend>
+				<ul id="errors"></ul>
+				<ul id="questions">
+					<li id="select"><label for="group">Add To Group: </label><br /></li>
+					<li><label for="companyName">Company Name: </label> <input type="text" id="companyName"/></li>
+					<li><label for="firstName">First Name: </label> <input type="text" id="firstName"/></li>
+					<li><label for="lastName">Last Name: </label> <input type="text" id="lastName"/></li>
+					<li><label for="address">Address: </label> <input type="text" id="address"/></li>
+					<li><label for="city">City: </label> <input type="text" id="city"/></li>
+					<li><label for="state">State: </label> <input type="text" id="state"/></li>
+					<li><label for="email">Email: </label> <input type="email" id="email"/></li>
+					<li><label for="mOwner">Motorcycle Owner: </label>
+						<ul class="checkbox">
+							<li><input type="radio" id="yes" value="Yes" name="mOwner" /><label for="yes">Yes</label></li>
+							<li><input type="radio" id="no" value="No" name="mOwner" /><label for="no">No</label></li>
+						</ul>
+					</li>
+
+					<li><input type="checkbox" id="fav" value="Yes" class="checkbox" /><label for="fav">Store As Favorite?</label></li>
+					
+					<!-- Date Added -->
+					<li><label for="date">Date Added:</label>
+						<input type="date" min="2012-01-01" max="2015-05-05" id="date" name="date" required aria-required="true" placeholder="2012-01-01">
+					</li>
+					
+					<!-- Notes -->
+					<li><label for="notes">Notes:</label><textarea id="notes"></textarea>
+						<input type="hidden" value="true"/>
+					</li>
+			
+			</fieldset>
+
+			<!-- Submit Button -->
+			<input type="submit" value="Save Card" id="submit" /><br />
+		</form>
+		
+		<!-- Javascript Link -->
+		<script src="JS/main.js" type="text/javascript"></script>
+	</body>
+</html>
