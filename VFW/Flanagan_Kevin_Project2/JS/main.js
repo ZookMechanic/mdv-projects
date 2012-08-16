@@ -18,8 +18,8 @@ window.addEventListener("DOMContentLoaded", function () {
 			makeSelect = document.createElement('select');
 			makeSelect.setAttribute("id", "groups");
 		for(var i=0, j=cardGroups.length; i<j; i++) {
-			var makeOption = document.createElement('option'),
-			var optText = cardGroups[i],
+			var makeOption = document.createElement('option');
+			var optText = cardGroups[i];
 			makeOption.setAttribute("value", optText);
 			makeOption.innerHTML = optText;
 			makeSelect.appendChild(makeOption);
@@ -92,7 +92,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	} // End Store Data Function
 
 	// Get Data Function
-	function getData() {
+/*	function getData() {
 		toggleControls("on");
 		if(localStorage.length === 0) {
 			console.log("There is no data in Local Storage.")
@@ -104,23 +104,23 @@ window.addEventListener("DOMContentLoaded", function () {
 		document.body.appendChild(makeDiv);
 		$('items').style.display = "block";
 		for(var i=0; len=localStorage.length; i<len; i++) {
-			var makeli = document.createElement('li');
-			makeList.appendChild(makeli);
+			var makeLi = document.createElement('li');
+			makeList.appendChild(makeLi);
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
 			// Convert String From Local Storage To An Object
 			var object = JSON.parse(value);
 			var makeSubList = document.createElement('ul');
-			makeli.appendChild(makeSubList);
+			makeLi.appendChild(makeSubList);
 			for(var n in object) {
-				var makeSubli = document.createElement('li');
-				makeSubList.appendChild(makeSubli);
+				var makeSubLi = document.createElement('li');
+				makeSubList.appendChild(makeSubLi);
 				var optSubText = object[n][0]+" "+object[n][1];
-				makeSubli.innerHTML = optSubText;
+				makeSubLi.innerHTML = optSubText;
 			}
 		}
 	} // End Get Data Function
-
+*/
 	function clearLocal() {
 		if(localStorage.length === 0) {
 			console.log("There is no data to clear.")
@@ -135,8 +135,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 	// Variable defaults
-	var cardGroups = ["--Pick A Group--", "Vendor", "Dealership", "Independent Shop", "Custom Service"],
-		mOwnerValue,
+	var cardGroups = ["--Pick A Group--", "Vendor", "Dealership", "Independent Shop", "Custom Service"];
+		mOwnerValue;
 		favoriteValue = "No"
 	;
 	makeCats();

@@ -21,9 +21,7 @@
 	<body>
 		
 		<!-- Header -->
-		<div id="site-wrapper">
-			<div id="content">
-				<header><h1 id="test">Biz Card Storage</h1></header>
+		<header><h1 id="test">Biz Card Storage</h1></header>
 
 		<!-- Clear and Display Data -->
 		<nav>
@@ -38,21 +36,20 @@
 				<legend>Add A Card</legend>
 				<ul id="errors"></ul>
 				<ul id="questions">
-					<li id="select"><label for="group">Add To Group: </label><br /></li>
-					<li><label for="companyName">Company Name: </label> <input type="text" id="companyName"/></li>
-					<li><label for="firstName">First Name: </label> <input type="text" id="firstName"/></li>
-					<li><label for="lastName">Last Name: </label> <input type="text" id="lastName"/></li>
-					<li><label for="address">Address: </label> <input type="text" id="address"/></li>
-					<li><label for="city">City: </label> <input type="text" id="city"/></li>
-					<li><label for="state">State: </label> <input type="text" id="state"/></li>
-					<li><label for="email">Email: </label> <input type="email" id="email"/></li>
+					<li id="select"><label for="groups">Add To Group:</label><br /></li>
+					<li><label for="companyName">Company Name: </label><input type="text" id="companyName" /></li>
+					<li><label for="firstName">First Name: </label><input type="text" id="firstName" /></li>
+					<li><label for="lastName">Last Name: </label><input type="text" id="lastName" /></li>
+					<li><label for="address">Address: </label><input type="text" id="address" /></li>
+					<li><label for="city">City: </label><input type="text" id="city" /></li>
+					<li><label for="state">State: </label><input type="text" id="state" /></li>
+					<li><label for="email">Email: </label><input type="email" id="email" /></li>
 					<li><label for="mOwner">Motorcycle Owner: </label>
 						<ul class="checkbox">
 							<li><input type="radio" id="yes" value="Yes" name="mOwner" /><label for="yes">Yes</label></li>
 							<li><input type="radio" id="no" value="No" name="mOwner" /><label for="no">No</label></li>
 						</ul>
 					</li>
-
 					<li><input type="checkbox" id="fav" value="Yes" class="checkbox" /><label for="fav">Store As Favorite?</label></li>
 					
 					<!-- Date Added -->
@@ -64,7 +61,7 @@
 					<li><label for="notes">Notes:</label><textarea id="notes"></textarea>
 						<input type="hidden" value="true"/>
 					</li>
-			
+				</ul>
 			</fieldset>
 
 			<!-- Submit Button -->
