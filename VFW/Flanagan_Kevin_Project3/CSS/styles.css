@@ -1,23 +1,29 @@
 /*
-
 By:      Kevin Flanagan
-Project: Web App Part 2
+Project: Web App Part 3
 Class:   VFW 1208
-
 */
 
 body{font-family:Arial, Helvetica, san-serif;width: 571px;margin: auto;padding: 10px;}
 #content{width: 480px;height: 690px;overflow: scroll;}
 
+html {
+	background: #c3c3c3;
+}
+
+header {
+	font: Helvetica 1.2em;
+	margin: 20px;
+	text-align: center;
+}
 
 h1 {
-	margin: 20px;
-	border: 1px solid #000;
+	margin: 5px;
 	padding: 10px;
 	background: #33b5e5;
 	text-align: center;
+	font-size: 50px;
 	font: Helvetica 1.2em;
-
 }
 
 form {
@@ -27,6 +33,11 @@ form {
 
 label {
 	display: block;
+}
+
+nav {
+	font: Helvetica 1.2em;
+	text-align: center;
 }
 
 

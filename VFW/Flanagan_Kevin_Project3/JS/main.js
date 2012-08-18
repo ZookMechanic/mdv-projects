@@ -1,5 +1,5 @@
 // Kevin Flanagan
-// Web App Part 2
+// Web App Part 3
 // VFW 1208
 
 // Is the DOM ready?
