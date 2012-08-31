@@ -13,7 +13,7 @@
 		<title>Add Toy Page</title>
 	</head>
 	<body>
-		<header><h1 id="test">Dealer Toy Inventory</h1><header>
+		<header><h1 id="test">Dealer Inventory</h1></header>
 		<nav>
 			<a href="#" id="clear">Clear Stored Data</a>
 			<a href="#" id="displaylink">Display Data</a>
@@ -22,18 +22,21 @@
 		<form action="#" method="post" id="contactForm" />
 			<fieldset id="contactFieldset">
 				<legend>Add A Toy</legend>
+				<span>* fields are required.</span>
 				<ul id="errors"></ul>
 				<ul id="questions">
-					<li id="select"><label for="groups">Type Of Toy:</label><br /></li>
-					<li><label for="year">Year: </label><input type="text" id="year" /></li>
-					<li><label for="manufacturer">Manufacturer: </label><input type="text" id="manufacturer" /></li>
-					<li><label for="model">Model: </label><input type="text" id="model" /></li>
+					<li id="select"><label for="group">*Type Of Vehicle:</label><br /></li>
+					<li><label for="year">*Year: </label><input type="text" id="year" /></li>
+					<li><label for="manufacturer">*Manufacturer: </label><input type="text" id="manufacturer" /></li>
+					<li><label for="model">*Model: </label><input type="text" id="model" /></li>
+					<li><label for="vin">*VIN: </label><input type="text" id="vin" /></li>
 						<ul class="checkbox">
 							<li><input type="radio" id="crated" value="Crated" name="status" /><label for="crated">Still In Crate</label></li>
 							<li><input type="radio" id="alreadybuilt" value="AlreadyBuilt" name="status" /><label for="alreadybuilt">Already Built</label></li>
 						</ul>
 					</li>
 					<li><input type="checkbox" id="floor" value="Yes" class="checkbox" /><label for="floor">Is The Unit On The Showroom Floor?</label></li>
+					<li><label for="price">Price</label><input type="range" min="0" max="20000" id="price" /></li>
 					<li><label for="date">Date Added:</label>
 						<input type="date" min="1962-01-01" max="2017-12-12" id="date" name="date" required aria-required="true" placeholder="1962-01-01">
 					</li>
