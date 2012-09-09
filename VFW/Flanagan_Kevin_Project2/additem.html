@@ -1,5 +1,5 @@
 <!--Kevin Flanagan-->
-<!--Web App Part 1-->
+<!--Web App Part 2-->
 <!--VFW Term 1209 -->
 
 <!DOCTYPE html>
@@ -10,14 +10,14 @@
 		<meta name="keywords" content="HTML5, Mobile Development, Full Sail University" />
 		<meta name="robots" content"index, follow" />
 		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<link href="CSS/styles.css" rel="stylesheet" />
 		<title>Add Toy Page</title>
-		<link rel="stylesheet" type="text/css" href="CSS/styles.css" media="only screen and (max-width: 485px)" />
 	</head>
 	<body>
 		<header><h1 id="test">Dealer Inventory</h1></header>
 		<nav>
 			<a href="#" id="clear">Clear Stored Data</a>
-			<a href="#" id="displaylink">Display Data</a>
+			<a href="#" id="displayLink">Display Data</a>
 			<a href="additem.html" id="addNew" style="display:none;">Add New Toy</a>
 		</nav>
 		<form action="#" method="post" id="contactForm" />
@@ -26,7 +26,7 @@
 				<span>* fields are required.</span>
 				<ul id="errors"></ul>
 				<ul id="questions">
-					<li id="select"><label for="group">*Type Of Vehicle:</label><br /></li>
+					<li id="select"><label for="groups">*Type Of Vehicle:</label><br /></li>
 					<li><label for="year">*Year: </label><input type="text" id="year" /></li>
 					<li><label for="manufacturer">*Manufacturer: </label><input type="text" id="manufacturer" /></li>
 					<li><label for="model">*Model: </label><input type="text" id="model" /></li>
@@ -37,10 +37,8 @@
 					</ul>
 					</li>
 					<li><input type="checkbox" id="floor" value="Yes" class="checkbox" /><label for="floor">Is The Unit On The Showroom Floor?</label></li>
-					<li><label for="price">Price</label><input type="range" min="0" max="20000" id="price" /></li>
-					<li><label for="date">Date Added:</label>
-						<input type="date" min="1962-01-01" max="2017-12-12" id="date" name="date" required aria-required="true" placeholder="1962-01-01">
-					</li>
+					<li><label for="price">Price:</label><input type="range" min="0" max="20000" id="price" /></li>
+					<li><label for="date">Date Added:</label><input type="date" id="date" /></li>
 					<li><label for="notes">Notes:</label><textarea id="notes"></textarea>
 						<input type="hidden" value="true"/>
 					</li>
