@@ -1,0 +1,36 @@
+/*
+By:			Kevin Flanagan
+Project:	Web App Part 2
+Class:		VFW 1209
+*/
+
+
+body{font-family:Arial, Helvetica, san-serif;width: 485px;margin: auto;padding: 10px;}
+#content{width: 480px;height: 690px;}
+
+html {
+	background: #c3c3c3;
+}
+
+header {
+	font: Helvetica 1.2em;
+	margin: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+	font: Helvetica 1.2em;
+}
+
+label {
+	display: block;
+}
+
+nav {
+	font: Helvetica 1.2em;
+	text-align: center;
+}
