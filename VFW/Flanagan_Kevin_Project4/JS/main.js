@@ -124,6 +124,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement('ul');
 			makeli.appendChild(makeSubList);
+			getImage(obj.group[1], makeSubList);
 			for(var n in obj) {
 				var makeSubli = document.createElement('li');
 				makeSubList.appendChild(makeSubli);
@@ -135,6 +136,15 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 	} // End getData Function
 
+
+	// Get The Image For The Right Category
+	function getImage(catName, makeSubList) {
+		var imageLi = document.createElement("li");
+		makeSubList.appendChild(imageLi);
+		var newImg = document.createElement('img');
+		var setSrc = newImg.setAttribute("src", "images/"+ catName + ".png");
+		imageLi.appendChild(newImg);
+	} // End getImage Function
 
 	// Auto Populate Locale Storage
 	// autoFillData Function
