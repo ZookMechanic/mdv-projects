@@ -176,9 +176,9 @@ window.addEventListener("DOMContentLoaded", function() {
 		$('vin').value = item.vin[1];
 		var radios = document.forms[0].status;
 		for(var i=0; i<radios.length; i++) {
-			if(radios[i].value === "Crated" && item.crated[1] === "Crated") {
+			if(radios[i].value === "crated" && item.crated[1] === "crated") {
 				radios[i].setAttribute("checked", "checked");
-			} else if(radios[i].value === "AlreadyBuilt" && item.crated[1] === "AlreadyBuilt") {
+			} else if(radios[i].value === "alreadyBuilt" && item.crated[1] === "alreadyBuilt") {
 				radios[i].setAttribute("checked", "checked");
 			}
 		}

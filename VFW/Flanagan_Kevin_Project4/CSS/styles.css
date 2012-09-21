@@ -1,11 +1,11 @@
 /*
 By:			Kevin Flanagan
-Project:	Web App Part 3
+Project:	Web App Part 4
 Class:		VFW 1209
 */
 
 
-body{font-family:Arial, Helvetica, san-serif;width: 485px;margin: auto;padding: 10px;}
+body{font-family:Arial, Helvetica, san-serif;width: 460px;margin: 20px auto;padding: 20px; border: 1px solid gray;}
 #content{width: 320px;height: 690px;}
 
 html {
@@ -22,11 +22,19 @@ form {
 	background-color: #c1c1c1;
 }
 
+form ul {
+	margin: 0px;padding: 0;list-style: none;
+}
+
+form fieldset ul.info input {
+	width: 200px; padding: 5px;margin: 5px;
+}
+
 h1 {
 	margin: 5px;
 	padding: 10px;
 	text-align: center;
-	font-size: 35px;
+	font-size: 25px;
 	font: Helvetica 1.2em;
 }
 
@@ -34,7 +42,14 @@ label {
 	display: block;
 }
 
+{type}, textarea {border: 1px solid gray;}
+
 nav {
 	font: Helvetica 1.2em;
 	text-align: center;
 }
+
+a:link{color: blue;}
+a:visited{color: black;}
+a:hover{color: red;}
+a:active{color: gray;}
